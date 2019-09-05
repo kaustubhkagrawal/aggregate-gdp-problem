@@ -1,0 +1,12 @@
+language: csharp
+solution: aggregate-gdp-population.sln
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+  slack: cgiwave8-net:BhGyv81KmlXeXL9ViKva7vMQ
+mono: none
+dotnet: 2.2
+script:
+  - dotnet restore
+  - dotnet test
